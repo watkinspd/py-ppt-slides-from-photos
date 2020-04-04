@@ -18,7 +18,7 @@ I hacked together this small python app that builds a sorted array of files that
 The directory you feed this app is expected to contain all the images you want put into the powerpoint deck. Each image being its own slide. Images are assumed to have .jpeg, .png, .tiff .gif extensions.
 
 1. Take a bunch of screen shots and move the files into a directory, or
-2. Export a selected set of files into their own directory that are in your photo app (such as apple photos) 
+2. Export a selected set of photos into their own directory that are currently in your photo app (such as apple photos) 
 3. Run photoslides.py
 4. Open the output .pptx file in powerpoint and build your killer preso
 
