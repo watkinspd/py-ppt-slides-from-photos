@@ -12,8 +12,8 @@ def main(argv):
     try:
         opts, args = getopt.getopt(argv,"hfi:o:t:",["imagelocationdirectory=",
                                                 "outputfile=",
-                                                "templatefle",
-                                                "sortbyfilename"])
+                                                "templatefle=",
+                                                "sortbyfilename="])
     except getopt.GetoptError:
         print ('try photoslides -i <dirOfImages> -o <output.pptx> -t <template.pptx> -f <sortbyfilename>')
         sys.exit(2)
@@ -35,11 +35,6 @@ def main(argv):
         elif opt in ("-f", "--sortbyfilename"):
             sort = 'f'
 
-    print ('Pathtofiles "', pathtofiles, '\n'
-        'Output file is "', outputfile, '\n'
-        'template is "', templatefile, '\n'
-        'sort is "', sort)
-    
     prs = Presentation(templatefile)
  
     blank_slide_layout = prs.slide_layouts[6]
