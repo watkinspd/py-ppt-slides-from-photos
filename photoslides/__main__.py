@@ -1,12 +1,12 @@
-#!/usr/bin/env python3
-
-from pptx import Presentation
-from pptx.util import Inches
 import os
 import sys
 import getopt
 
-def main(argv):
+from pptx import Presentation
+from pptx.util import Inches
+
+def main():
+    argv = sys.argv[1:]
     pathtofiles = '.'
     outputfile = 'test.pptx'
     templatefile = './template.pptx'
@@ -17,7 +17,7 @@ def main(argv):
                                                 "templatefile=",
                                                 "sortbyfilename="])
     except getopt.GetoptError:
-        print ('try python photoslides.py -h ')
+        print ('try photoslides -h ')
         sys.exit(2)
     for opt, arg in opts:
         if opt == '-h':
@@ -66,4 +66,4 @@ def main(argv):
     prs.save(outputfile)
 
 if __name__ == "__main__":
-   main(sys.argv[1:])
+   main()
