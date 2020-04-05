@@ -24,16 +24,16 @@ The directory you feed this app is expected to contain all the images you want p
 
 
 ## Sequencing the slides
-I found that if I exported photos from apple photos the filename sequence doesnt always work the way I expect However, it generates the exported files with a "last modified date" that is in the order they were exported; and that works well for me.
+I found that if I exported photos from apple photos the filename sequence doesnt always work the way I expect. However, it generates the exported files with a "last modified date" that is in the order they were exported; and that works well for me.
 
 Hack: If you struggle with sequencies, change the filenames as needed, or there are tools you can use to modify the timestamps on files. One that I used is: 
 ```
-setFile
+setFile -h
 ```
 
 There are two ways to control the sequence of the resulting slides:
-1 - Default behaviour is the list of files is sorted by the files last modified date
-2 - Specify the -f option and it will sort the list of files by filename
+1. Default behaviour is the list of files is sorted by the files last modified date
+2. Specify the -f option and it will sort the list of files by filename
 
 
 ## Pre-requisites:
