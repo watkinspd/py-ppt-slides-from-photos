@@ -14,7 +14,7 @@ def main(argv):
     try:
         opts, args = getopt.getopt(argv,"hfi:o:t:",["imagelocationdirectory=",
                                                 "outputfile=",
-                                                "templatefle=",
+                                                "templatefile=",
                                                 "sortbyfilename="])
     except getopt.GetoptError:
         print ('try python photoslides.py -h ')
