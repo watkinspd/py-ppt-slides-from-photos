@@ -12,7 +12,9 @@ I could not find a feature for this in powerpoint. After much searching I found 
 
 https://python-pptx.readthedocs.io/en/latest/index.html
 
-I hacked together this small python app that builds a sorted array of files that are in a directory and adds each one as a slide in a powerpoint deck. Each image is sized to fill the height of its slide using a template.pptx file by default.
+I hacked together this small python app that builds a sorted array of files that are in a directory and adds each one as a slide in a powerpoint deck. Each image is sized to fill the height of its slide using a supplied .pptx file as a template that will setup the slide size.
+
+If no template file is specfied the app assumes there is a file "template.pptx" in the current directory. Open powerpoint and save a single slide presentation as "template.pttx" into the current directory. I found that if you do not do this you get slides at 4:3 ratio and not widescreen. 
 
 
 ## Example workflow:
@@ -20,14 +22,14 @@ The directory you feed this app is expected to contain all the images you want p
 
 1. Take a bunch of screen shots and move the files into a directory, or
 2. Export a selected set of photos into their own directory that are currently in your photo app (such as apple photos) 
-3. Run photoslides.py
+3. Run photoslides
 4. Open the output .pptx file in powerpoint and build your killer preso
 
 
 ## Sequencing the slides
-I found that if I exported photos from apple photos the filename sequence doesnt always work the way I expect. However it generates the exported files with a "last modified date" and that is in the order they were exported; and that works well for me.
+I found that if I exported photos from apple photos the filename sequence doesnt always work the way I expect. However it generates the exported files with a "last modified date" and those are in the order they were exported. That works well for me.
 
-Hack: If you struggle with getting things in the right sequence change the filenames as needed, or there are tools you can use to modify the timestamps on files. One that I used is: 
+Hack: If you struggle with getting things in the right sequence change the filenames as needed. There are also tools you can use to modify the timestamps on files. One that I used is: 
 ```
 setFile -h
 ```
@@ -45,6 +47,7 @@ This work assumes you have your machine setup to run python apps locally.
 
 ```
 git clone https://github.com/watkinspd/py-ppt-slides-from-photos.git
+
 cd ./py-ppt-slides-from-photos
 
 ./install.sh 
@@ -53,6 +56,12 @@ pip install -e
 
 photoslides -h
 ```
+
+## To uninstall:
+```
+pip uninstall photoslides
+```
+
 
 Thanks to 
 
