@@ -46,9 +46,18 @@ This work assumes you have your machine setup to run python apps locally.
 ```
 git clone https://github.com/watkinspd/py-ppt-slides-from-photos.git
 cd ./py-ppt-slides-from-photos
-pip install -r requirements.txt
-python photoslides.py -h
+
+./install.sh 
+--or-- 
+pip install -e 
+
+photoslides -h
 ```
 
+Thanks to 
+
+https://medium.com/@trstringer/the-easy-and-nice-way-to-do-cli-apps-in-python-5d9964dc950d
+
+for the info on how to make this install so it can run as a commandline tool.
 
 
