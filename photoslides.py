@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from pptx import Presentation
 from pptx.util import Inches
 import os
