@@ -14,7 +14,7 @@ https://python-pptx.readthedocs.io/en/latest/index.html
 
 I hacked together this small python app that builds a sorted array of files that are in a directory and adds each one as a slide in a powerpoint deck. Each image is sized to fill the height of its slide using a supplied .pptx file as a template that will setup the slide size.
 
-If no template file is specfied the app assumes there is a file "template.pptx" in the current directory. Open powerpoint and save a single slide presentation as "template.pttx" into the current directory. I found that if you do not do this you get slides at 4:3 ratio and not widescreen. 
+If no template file is specfied the app assumes there is a file "template.pptx" in the current directory. Open powerpoint and save a single slide presentation as "template.pptx" into the current directory. I found that if you do not do this you get slides at 4:3 ratio and not widescreen. 
 
 
 ## Example workflow:
