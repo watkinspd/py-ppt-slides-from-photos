@@ -15,7 +15,7 @@ def main(argv):
                                                 "templatefle=",
                                                 "sortbyfilename="])
     except getopt.GetoptError:
-        print ('try photoslides -i <dirOfImages> -o <output.pptx> -t <template.pptx> -f <sortbyfilename>')
+        print ('try photoslides -h ')
         sys.exit(2)
     for opt, arg in opts:
         if opt == '-h':

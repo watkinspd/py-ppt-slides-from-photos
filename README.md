@@ -8,7 +8,8 @@ I often build presentations that involve many screen shots. There are a couple o
 
 
 ## python-pptx to the rescue
-I could not find a feature for this in powerpoint. After much searching I found this brilliant python library 
+I could not find a feature for this in powerpoint. After much searching I found this brilliant python library
+ 
 https://python-pptx.readthedocs.io/en/latest/index.html
 
 I hacked together this small python app that builds a sorted array of files that are in a directory and adds each one as a slide in a powerpoint deck. Each image is sized to fill the height of its slide using a template.pptx file by default.
@@ -26,7 +27,7 @@ The directory you feed this app is expected to contain all the images you want p
 ## Sequencing the slides
 I found that if I exported photos from apple photos the filename sequence doesnt always work the way I expect. However, it generates the exported files with a "last modified date" that is in the order they were exported; and that works well for me.
 
-Hack: If you struggle with sequencies, change the filenames as needed, or there are tools you can use to modify the timestamps on files. One that I used is: 
+Hack: If you struggle with getting things in the right sequence change the filenames as needed, or there are tools you can use to modify the timestamps on files. One that I used is: 
 ```
 setFile -h
 ```
