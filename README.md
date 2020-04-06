@@ -40,26 +40,33 @@ There are two ways to control the sequence of the resulting slides:
 
 
 ## Pre-requisites:
-This work assumes you have your machine setup to run python apps locally.
+This work assumes you have your machine setup to run python apps locally.  The procedure described here is know to work on python3 on Mac OS Catalina. YMMV. 
 
+> Recommended:  Set up a "virtual env"  to keep your python environment clean.  An example is shown below.
+>
+> ````
+> % python3 -m venv ~/virtualenvs/photoslide
+> % source ~/virtualenvs/photoslide/bin/activate
+> ```` 
 
 ## To install and run:
 
-```
-git clone https://github.com/watkinspd/py-ppt-slides-from-photos.git
 
-cd ./py-ppt-slides-from-photos
+1. `git clone https://github.com/watkinspd/py-ppt-slides-from-photos.git`
 
-./install.sh 
---or-- 
-pip install -e 
+1. `cd ./py-ppt-slides-from-photos`
 
-photoslides -h
-```
+1. `pip install -r requirements.txt` // installs require libraries including `python-pptx`
+
+1. `./install.sh` --or-- `pip install -e .` // install photoslide a local executable module
+
+1. `photoslides -h` // show help for photoslide tool 
+
 
 ## To uninstall:
+
 ```
-pip uninstall photoslides
+% pip uninstall photoslides
 ```
 
 
